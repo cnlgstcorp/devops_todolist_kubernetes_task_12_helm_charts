@@ -1,6 +1,6 @@
 serviceAccountName: secrets-reader
 
-replicaCount: 2
+replicaCount: 3
 
 configs:
   APP_ENV: "production"

@@ -118,8 +118,6 @@ tolerations: []
 
 affinity: {}
 
-common:
-  namespace: mysql
 
 pvc:
   storage: "2Gi"

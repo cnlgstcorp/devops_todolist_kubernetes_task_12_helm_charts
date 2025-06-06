@@ -2,9 +2,10 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: mysql
-  namespace: {{ .Values.common.namespace }}
+  namespace: {{ .Release.Namespace }}
+
 spec:
-  replicas: {{ .Values.replicas }}
+  replicas: {{ .Values.replicaCount }}
   serviceName: mysql
   selector:
     matchLabels:

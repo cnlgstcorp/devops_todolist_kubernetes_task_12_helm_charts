@@ -2,7 +2,8 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: mysql
-  namespace: {{ .Values.common.namespace }}
+  namespace: {{ .Release.Namespace }}
+
   labels:
     app: mysql
 data:
